@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealWell – Your Guide to Better Health Awareness</title>
+     <link href="healwell.css" rel="stylesheet" />
+  
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">🏥 HealWell</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#" onclick="showAboutModal()">About Project</a></li>
+                <li><a href="#diseases">Diseases</a></li>
+                <li><a href="#tips">Health Tips</a></li>
+                <li><a href="#myths">Myths vs Facts</a></li>
+                <li><a href="#" onclick="toggleChatbot()">💬 Health Assistant</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </nav>
+    </header>
+
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="section-title">About This Project</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>This project is inspired by the Ministry of Health and Family Welfare, Government of India's vision of accessible healthcare for all. While India has made significant progress in healthcare, there remains a gap in public health awareness and education.</p>
+                    <p>Our website aims to bridge that gap by presenting simplified, verified, and visually rich healthcare content online, especially targeting youth and general public education in line with government health initiatives.</p>
+                </div>
+                <div class="about-text">
+                    <p>We believe that health awareness should be accessible to everyone. Through this platform, we provide reliable information about common diseases, their symptoms, preventive measures, and help debunk health-related myths with scientific facts.</p>
+                    <p>Our mission is to empower individuals with knowledge that can help them make informed decisions about their health and well-being.</p>
+                </div>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <h3>Darshan Chaudhari</h3>
+                    <p>Website Developer (Project Leader)</p>
+                </div>
+                <div class="team-card">
+                    <h3>Himesh Bagul</h3>
+                    <p>Content Manager</p>
+                </div>
+                <div class="team-card">
+                    <h3>Mansi Akolkar</h3>
+                    <p>Communication Leader</p>
+                </div>
+                <div class="team-card">
+                    <h3>Archana Chavan</h3>
+                    <p>Content Manager</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>HealWell</h1>
+                <p>Your Guide to Better Health Awareness</p>
+                <a href="#diseases" class="cta-button">Explore Diseases</a>
+            </div>
+        </section>
+
+        <section id="diseases">
+            <div class="container">
+                <h2 class="section-title">Disease Information</h2>
+                <div class="disease-carousel">
+                    <div class="disease-slider" id="diseaseSlider">
+                    </div>
+                    <button class="carousel-nav prev" onclick="prevDisease()">‹</button>
+                    <button class="carousel-nav next" onclick="nextDisease()">›</button>
+                    <div class="carousel-dots" id="carouselDots">   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips">
+            <div class="container">
+                <h2 class="section-title">Health Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">💧</div>
+                        <h3>Stay Hydrated</h3>
+                        <p>Drink at least 8 glasses of water daily to maintain proper body function and flush out toxins.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🥗</div>
+                        <h3>Balanced Nutrition</h3>
+                        <p>Include fruits, vegetables, whole grains, and lean proteins in your daily diet for optimal health.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">😴</div>
+                        <h3>Quality Sleep</h3>
+                        <p>Get 7-9 hours of quality sleep each night to allow your body to repair and recharge.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🏃‍♂️</div>
+                        <h3>Regular Exercise</h3>
+                        <p>Engage in at least 30 minutes of physical activity daily to maintain cardiovascular health.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🧘‍♀️</div>
+                        <h3>Stress Management</h3>
+                        <p>Practice meditation, yoga, or deep breathing to manage stress and improve mental health.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🩺</div>
+                        <h3>Regular Checkups</h3>
+                        <p>Schedule regular health screenings and checkups to catch potential issues early.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="myths">
+            <div class="container">
+                <h2 class="section-title">Myths vs Facts</h2>
+                <div class="myths-grid">
+                    <div class="myth-fact-card">
+                        <div class="myth">
+                            <h4>❌ Myth</h4>
+                            <p>You only need sunscreen on sunny days.</p>
+                        </div>
+                        <div class="fact">
+                            <h4>✅ Fact</h4>
+                            <p>UV rays affect your skin even on cloudy days. Daily sunscreen use is essential.</p>
+                        </div>
+                    </div>
+                    <div class="myth-fact-card">
+                        <div class="myth">
+                            <h4>❌ Myth</h4>
+                            <p>Cracking knuckles causes arthritis.</p>
+                        </div>
+                        <div class="fact">
+                            <h4>✅ Fact</h4>
+                            <p>Studies show no link between knuckle cracking and arthritis development.</p>
+                        </div>
+                    </div>
+                    <div class="myth-fact-card">
+                        <div class="myth">
+                            <h4>❌ Myth</h4>
+                            <p>You need to drink 8 glasses of water daily.</p>
+                        </div>
+                        <div class="fact">
+                            <h4>✅ Fact</h4>
+                            <p>Water needs vary by person, activity level, and climate. Listen to your body.</p>
+                        </div>
+                    </div>
+                    <div class="myth-fact-card">
+                        <div class="myth">
+                            <h4>❌ Myth</h4>
+                            <p>Natural supplements are always safe.</p>
+                        </div>
+                        <div class="fact">
+                            <h4>✅ Fact</h4>
+                            <p>Natural doesn't mean safe. Always consult healthcare providers before taking supplements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HealWell Project</h3>
+                    <p>Spreading health awareness through accessible, reliable information for everyone.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Team</h3>
+                    <p>Darshan Chaudhari - Website Developer (Project Leader)<br>
+                    Himesh Bagul - Content Manager<br>
+                    Mansi Akolkar - Communication Leader<br>
+                    Archana Chavan - Content Manager</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Inspired By</h3>
+                    <p><a href="https://mohfw.gov.in/" target="_blank" style="color: var(--primary-color); text-decoration: none;">Ministry of Health & Family Welfare</a><br>
+                    Government of India<br>
+                    <small>Committed to accessible healthcare for all</small></p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #374151; padding-top: 2rem; margin-top: 2rem;">
+                <p>&copy; 2024 HealWell. Created for educational purposes. Always consult healthcare professionals for medical advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbotContainer" class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>🩺 Health Assistant - Chatbot</h3>
+            <button class="chatbot-close" onclick="toggleChatbot()">×</button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot">
+                Hi! I'm your Health Assistant. I can help answer questions about diseases, symptoms, prevention, and general health tips. How can I help you today?
+            </div>
+        </div>
+        <div class="quick-questions" id="quickQuestions">
+            <button class="quick-question" onclick="askQuickQuestion('What are the symptoms of diabetes?')">What are the symptoms of diabetes?</button>
+            <button class="quick-question" onclick="askQuickQuestion('How can I prevent heart disease?')">How can I prevent heart disease?</button>
+            <button class="quick-question" onclick="askQuickQuestion('What should I do if I have high blood pressure?')">What should I do if I have high blood pressure?</button>
+            <button class="quick-question" onclick="askQuickQuestion('How much water should I drink daily?')">How much water should I drink daily?</button>
+            <button class="quick-question" onclick="askQuickQuestion('What are the signs of depression?')">What are the signs of depression?</button>
+            <button class="quick-question" onclick="askQuickQuestion('How can I improve my sleep quality?')">How can I improve my sleep quality?</button>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your health question..." onkeypress="handleChatbotKeypress(event)">
+            <button class="chatbot-send" onclick="sendChatbotMessage()">Send</button>
+        </div>
+    </div>
+
+    <button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()">💬</button>
+
+<script src="healwell.js"></script><script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === "/") {
+        var decoded = l.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(
+          null,
+          null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    })(window.location);
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9687778af211f15a',t:'MTc1NDA3MzY1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

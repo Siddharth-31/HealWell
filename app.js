@@ -486,4 +486,5 @@
                 header.style.background = 'var(--white)';
                 header.style.backdropFilter = 'none';
             }
+
         });
